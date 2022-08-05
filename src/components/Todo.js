@@ -3,7 +3,7 @@ const Todo = ({dispatch,state}) => {
    
     return (
         <div className='todo'>
-        {state.map(()=> {
+        {state.map((item)=> {
             return(
             <div className="title">
                 {item}
