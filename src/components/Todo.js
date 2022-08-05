@@ -1,9 +1,9 @@
 import React from 'react';
-const Todo = ({dispatch,state}) => {
+const Todo = ({dispatch,todo}) => {
    
     return (
         <div className='todo'>
-        {state.map((item)=> {
+        {todo.map((item)=> {
             return(
             <div className="title">
                 {item}
