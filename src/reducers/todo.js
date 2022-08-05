@@ -1,9 +1,15 @@
 const todoReducer = (state, action) => {
     switch (action.type) {
         case "ADD" :
-            return {todo: [...state.todo,action.payload.title]};
+            return  [...state,action.payload.title];
             case "DELETE" :
-                return{todo: state.todo.filter(item) => item.id !==action.payload.id}
+                return(
+                    state.filter((item)=> {
+                        if(item.id !== action.payload.id) {
+                            return item;
+                        }
+                }
+            )
             default :
             return state;
     }
