@@ -4,7 +4,7 @@ import '../styles/App.css';
 import { AddTodo } from './AddTodo';
 import { Todo } from './Todo';
 const App = () => {
-  const [state,dispatch] = useReducer(todoReducer,state:[])
+  const [state,dispatch] = useReducer(todoReducer,[])
   
  
   return (
